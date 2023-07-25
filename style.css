@@ -1,0 +1,147 @@
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-size: 15px;
+}
+
+/*MAIN BOX DIMENSIONS*/
+
+body {
+    background-color: #0A0C1B;
+}
+.main {
+    display:flex;
+    flex-direction:row;
+    width:1110px;
+    height:446px;
+}
+.info_container {
+    background-color: #1C1938;
+    color:white;
+    width:540px;
+    height:446px;
+    border-radius:15px 0 0 15px;
+    margin:auto;
+}
+.image_container {
+    background-image:url(images/image-header-desktop.jpg);
+    background-size: cover;
+    width:570px;
+    height:446px;
+    border-radius:0 15px 15px 0;
+}
+
+/*TITLE BOX*/
+
+.title {
+    font-size:2.25rem;
+    font-family: 'Lexend Deca', sans-serif;
+    margin:80px 80px 0 80px;
+}
+.purple {
+    font-size:2.25rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsl(277, 64%, 61%);
+}
+
+.info {
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    margin:30px 80px;
+    font-size: 1rem;
+}
+
+
+
+
+.numbers {
+    display:flex;
+    flex-direction: row;
+    
+    justify-content: center;
+}
+.box {
+    display:flex;
+    flex-direction: column;
+    margin:10px 38px;
+}
+.num {
+    font-size:1.75rem;
+    font-weight: 500;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.word {
+    color:gray;
+    font-family: 'Inter', sans-serif;
+    font-size:.9rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MOBILE RESPONSIVENESS*/
+
+@media screen and (max-width:500px) {
+    .main {
+        display:flex;
+        flex-direction:column-reverse;
+        width:327px;
+        height:780px;
+    }
+    .info_container {
+        width:327px;
+        height:540px;
+    }
+    .image_container {
+        background-image: url(images/image-header-mobile.jpg);
+        background-size: cover;
+        width:327px;
+        height:240px;
+    }
+    .title {
+        text-align: center;
+        font-size: 1.5rem;
+        margin:25px;
+    }
+    .purple {
+        text-align: center;
+        font-size:1.5rem;
+        margin:auto;
+    }
+    .info {
+        text-align: center;
+        line-height: 1.75;
+        margin:40px;
+    }
+    .numbers {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    
+}
+
